@@ -1,5 +1,10 @@
 print(__doc__)
 
+# Charlotte Wilson reference tutorial 
+# 12/11/2015
+#
+
+
 # Author: Gael Varoquaux <gael dot varoquaux at normalesup dot org>
 # License: BSD 3 clause
 
