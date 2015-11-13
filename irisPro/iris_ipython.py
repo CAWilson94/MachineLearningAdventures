@@ -9,6 +9,7 @@ from sklearn.datasets import load_iris
 iris = load_iris();
 # type(iris) --> Do you really need this?
 # Each row represents one flower, 
+# print the iris data
 # each collumn represents the four measurments
 print (iris.data);
 """
@@ -32,5 +33,10 @@ Example start of dataset output
 
 # print the names of the 4 features
 print(iris.feature_names);
-#Print integer representing the species of each Observation
+# Print integer representing the species of each Observation
 print(iris.target);
+print(iris.target_names);
+# The target represnts what we are going to predict
+# 0 - setosa 
+# 1 - veriscolor
+# 2 - virginica
