@@ -133,6 +133,33 @@ Steps in K nearest neighbour:
 # 1. import the class you plan to use
 from sklearn.neighbors import KNeighborsClassifier
 
-# 2. Instantiate the Estimator (model)
+# 2. Instantiate the Estimator (model) so called due 
+# to their primary goal being to estimate unknown quantities.
+# Creating an instance of the KNeighborsClassifier class!
+knn = KNeighborsClassifier(n_neighbors=1);
+
+# We now have an object called knn that knows how to do
+# K nearest neighbours classification!
+# It is now just waiting for us to give it some data. 
+print(knn);
+
+# 3. Fit the model with data - MODEL TRAINING!
+# Model is learning the relationship between X and y 
+# Occurs in-place so dont need to assign it to an object
+knn.fit(X, y);
+
+#4. predict the response of the new observation
+# New observations called "out of sample" data
+# Uses the information it learned during the model training process.
+
+#Inputting measurements for unknown iris, and asking fitted model
+# to predict the iris species based on what it has learned in the previous step.
+
+array = knn.predict([3,5,4,2]) #WARNING HOW TO FIX?
+print array
+#Can use predict on multiple observations at once
+X_new = [[3,5,4,2],[5,4,3,2]]
+print knn.predict(X_new)
+
 
 
