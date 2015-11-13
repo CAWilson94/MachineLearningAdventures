@@ -11,6 +11,7 @@ iris = load_iris();
 # Each row represents one flower, 
 # print the iris data
 # each collumn represents the four measurments
+type(iris);
 print (iris.data);
 """
 Example start of dataset output 
@@ -57,7 +58,42 @@ print(iris.target_names);
 # Then decide if the response variable is suitable for 
 # regression or classification
 
-#The 0 1 and 2 represent unordered categories ...
+# The 0 1 and 2 represent unordered categories ...
+# 9:15
 
+# Requirements for working with scikit learn:
+############################################
+# 1. Features and response - Separate objects
+# 2. Features and response - Numeric
+# 3. Features and response - NumPy arrays
+# 4. Features and response - Specific shapes
+############################################
 
-#
+# Need to first learn the relationship between the features and the response
+# But first we should make sure the features and response are in the form 
+# that scikit learn expects! (details above).
+
+# Check type of features and response
+# Since iris.data and iris.target are stored separatly 
+# They fulfill the first condition.
+# check NumPy arrays!
+print type(iris.data)
+print type(iris.target)
+# Check shape of features
+# first dimension = number of observation
+# second dimension = number of features
+# output: (150L,4L) as expected
+print(iris.data.shape);
+# Check shape of response
+# single dimension matching number of observations
+# output: (150L,) as expected
+######################################### There should be one response corresponding to each observation ###################
+print(iris.target.shape);
+
+# The scikit learn convention is for the feature data to be stored in an object named x
+# And for the response data to be stored in an object named y
+# Store  feature matrix in "x"
+x = iris.data
+# Store response vector in "y"
+y = iris.target
+
