@@ -1,6 +1,0 @@
-# The task here is to predict, given an image, what digit it represents
-# Given samples of each of the ten classes (digits 0-9)
-# We fit an ESTIMATOR on each of these, which is able to predict 
-# the classes to which unseen samples belong
-
-#In scikit-learn an estimator for classification 
