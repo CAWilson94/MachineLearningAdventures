@@ -128,3 +128,11 @@ Steps in K nearest neighbour:
    What does it mean by most popular?  
 
 """
+
+""" ------------------------------- Scikit learn 4 step modelling pattern ----------------------------------------------------"""
+# 1. import the class you plan to use
+from sklearn.neighbors import KNeighborsClassifier
+
+# 2. Instantiate the Estimator (model)
+
+
