@@ -92,8 +92,8 @@ print(iris.target.shape);
 
 # The scikit learn convention is for the feature data to be stored in an object named x
 # And for the response data to be stored in an object named y
-# Store  feature matrix in "x"
-x = iris.data
-# Store response vector in "y"
+# Store  feature matrix in "x" : X capitalised because it represents a matrix
+X = iris.data
+# Store response vector in "y" : lower case because it represents a vector
 y = iris.target
 
