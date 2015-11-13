@@ -1,0 +1,17 @@
+#Charlotte Wilson
+#SciKit learn example
+
+
+#importing a dataset
+from sklearn import datasets
+from sklearn.svm import SVC
+#.data member is an n_sample and n_features array
+iris = datasets.load_iris()
+digits = datasets.load_digits
+
+print(digits)
+
+
+
+
+

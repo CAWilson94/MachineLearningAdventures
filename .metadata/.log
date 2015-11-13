@@ -733,3 +733,281 @@ The most important of these settings is core.autocrlf. Git for Windows by defaul
 this system level configuration. The Git installation location can be configured on the
 Team > Git > Configuration preference page's 'System Settings' tab.
 This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.core.net 4 0 2015-11-13 05:50:19.540
+!MESSAGE WinHttp.DetectAutoProxyConfigUrl for wpad failed with error 'The Proxy Auto-configuration URL was not found.
+' #12180.
+
+!ENTRY org.python.pydev.shared_core 4 4 2015-11-13 05:50:25.608
+!MESSAGE Unhandled: ExtSlice[dims=[Slice[lower=null, upper=null, step=null], Index[value=UnaryOp[op=USub, operand=Num[n=1, type=Int, num=1]]]]]
+!STACK 0
+java.lang.RuntimeException: Unhandled: ExtSlice[dims=[Slice[lower=null, upper=null, step=null], Index[value=UnaryOp[op=USub, operand=Num[n=1, type=Int, num=1]]]]]
+	at org.python.pydev.parser.prettyprinterv2.MakeAstValidForPrettyPrintingVisitor.unhandled_node(MakeAstValidForPrettyPrintingVisitor.java:105)
+	at org.python.pydev.parser.jython.ast.VisitorBase.visitExtSlice(VisitorBase.java:345)
+	at org.python.pydev.parser.jython.ast.ExtSlice.accept(ExtSlice.java:79)
+	at org.python.pydev.parser.prettyprinterv2.MakeAstValidForPrettyPrintingVisitor.visitSubscript(MakeAstValidForPrettyPrintingVisitor.java:933)
+	at org.python.pydev.parser.jython.ast.Subscript.accept(Subscript.java:93)
+	at org.python.pydev.parser.prettyprinterv2.MakeAstValidForPrettyPrintingVisitor.visitAssign(MakeAstValidForPrettyPrintingVisitor.java:184)
+	at org.python.pydev.parser.jython.ast.Assign.accept(Assign.java:90)
+	at org.python.pydev.parser.prettyprinterv2.MakeAstValidForPrettyPrintingVisitor.visitFunctionDef(MakeAstValidForPrettyPrintingVisitor.java:862)
+	at org.python.pydev.parser.jython.ast.FunctionDef.accept(FunctionDef.java:131)
+	at org.python.pydev.parser.prettyprinterv2.MakeAstValidForPrettyPrintingVisitor.makeValid(MakeAstValidForPrettyPrintingVisitor.java:171)
+	at org.python.pydev.editor.hover.PyTextHover.getDocstringHover(PyTextHover.java:232)
+	at org.python.pydev.editor.hover.PyTextHover.getHoverInfo(PyTextHover.java:144)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:168)
+
+!ENTRY org.python.pydev.shared_core 4 4 2015-11-13 05:50:50.796
+!MESSAGE ERROR reading shell.
+ProcessInfo:
+
+ - Executed: C:\Users\h\Anaconda2\python.exe -u C:\Users\h\Documents\PROGRAMMING\YearOne\eclipse-java-kepler-R-win32-x86_64\eclipse\plugins\org.python.pydev_4.4.0.201510052309\pysrc\pycompletionserver.py 1875
+
+ - Environment:
+ALLUSERSPROFILE=C:\ProgramData
+AMDAPPSDKROOT=C:\Program Files (x86)\AMD APP\
+APPDATA=C:\Users\h\AppData\Roaming
+ASL.LOG=Destination=file
+CDSROOT=C:\OrCAD\OrCAD_16.6_Lite
+COMMONPROGRAMFILES(X86)=C:\Program Files (x86)\Common Files
+COMMONPROGRAMFILES=C:\Program Files\Common Files
+COMMONPROGRAMW6432=C:\Program Files\Common Files
+COMPUTERNAME=P
+COMSPEC=C:\WINDOWS\system32\cmd.exe
+ComSpec=C:\WINDOWS\system32\cmd.exe
+CommonProgramFiles(x86)=C:\Program Files (x86)\Common Files
+CommonProgramFiles=C:\Program Files\Common Files
+CommonProgramW6432=C:\Program Files\Common Files
+FP_NO_HOST_CHECK=NO
+HOME=C:\Users\h\
+HOMEDRIVE=C:
+HOMEPATH=\Users\h
+LOCALAPPDATA=C:\Users\h\AppData\Local
+LOGONSERVER=\\MicrosoftAccount
+NUMBER_OF_PROCESSORS=4
+OMP_NUM_THREADS=4
+OS=Windows_NT
+PATH=C:/Program Files (x86)/Java/bin/server;C:/Program Files (x86)/Java/bin;C:/Program Files (x86)/Java/lib/amd64;C:\Python34\;C:\Python34\Scripts;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\iis express\PHP\v5.3;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Program Files (x86)\AMD APP\bin\x86_64;C:\Program Files (x86)\AMD APP\bin\x86;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x64;c:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;c:\Program Files\Microsoft SQL Server\100\Tools\Binn\;c:\Program Files\Microsoft SQL Server\100\DTS\Binn\;C:\Program Files\Microsoft\Web Platform Install;G:\Rust\Rust\bin;G:\Program Files (x86)\Git\cmd;C:\Program Files\Java\jdk1.8.0_40\bin\;C:\Program Files (x86)\Skype\Phone\;G:\CKD\Program Files\OpenVPN\bin;C:\Program Files\nodejs\;C:\HashiCorp\Vagrant\bin;C:\Users\h\Anaconda2;C:\Users\h\Anaconda2\Scripts;C:\Users\h\Anaconda2\Library\bin;C:\OrCAD\OrCAD_16.6_Lite\tools\pcb\bin;C:\OrCAD\OrCAD_16.6_Lite\tools\fet\bin;C:\OrCAD\OrCAD_16.6_Lite\OpenAccess\bin\win32\opt;C:\OrCAD\OrCAD_16.6_Lite\tools\bin;C:\OrCAD\OrCAD_16.6_Lite\tools\Capture;C:\OrCAD\OrCAD_16.6_Lite\tools\PSpice;;C:\Modeltech_pe_edu_10.3\win32pe_edu\;G:\Python34;G:\Python34\python.exe;G:\Python34\Scripts\pip.exe;C:\Users\h\AppData\Roaming\npm;C:\Users\h\Documents\PROGRAMMING\YearOne\eclipse-java-kepler-R-win32-x86_64\eclipse;
+PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY
+PROCESSOR_ARCHITECTURE=AMD64
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 58 Stepping 9, GenuineIntel
+PROCESSOR_LEVEL=6
+PROCESSOR_REVISION=3a09
+PROGRAMDATA=C:\ProgramData
+PROGRAMFILES(X86)=C:\Program Files (x86)
+PROGRAMFILES=C:\Program Files
+PROGRAMW6432=C:\Program Files
+PROMPT=$P$G
+PSMODULEPATH=C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules\
+PSModulePath=C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules\
+PUBLIC=C:\Users\Public
+PYTHONPATH=C:\Users\h\Documents\PROGRAMMING\YearOne\eclipse-java-kepler-R-win32-x86_64\eclipse\plugins\org.python.pydev_4.4.0.201510052309\pysrc\pydev_sitecustomize;C:\Users\h\Anaconda2\DLLs;C:\Users\h\Anaconda2\lib;C:\Users\h\Anaconda2\lib\lib-tk;C:\Users\h\Anaconda2;C:\Users\h\Anaconda2\Library\bin;C:\Users\h\Anaconda2\lib\site-packages;C:\Users\h\Anaconda2\lib\site-packages\Sphinx-1.3.1-py2.7.egg;C:\Users\h\Anaconda2\lib\site-packages\cryptography-1.0.2-py2.7-win-amd64.egg;C:\Users\h\Anaconda2\lib\site-packages\win32;C:\Users\h\Anaconda2\lib\site-packages\win32\lib;C:\Users\h\Anaconda2\lib\site-packages\Pythonwin;C:\Users\h\Anaconda2\lib\site-packages\setuptools-18.4-py2.7.egg
+Path=C:/Program Files (x86)/Java/bin/server;C:/Program Files (x86)/Java/bin;C:/Program Files (x86)/Java/lib/amd64;C:\Python34\;C:\Python34\Scripts;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\iis express\PHP\v5.3;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Program Files (x86)\AMD APP\bin\x86_64;C:\Program Files (x86)\AMD APP\bin\x86;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x64;c:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;c:\Program Files\Microsoft SQL Server\100\Tools\Binn\;c:\Program Files\Microsoft SQL Server\100\DTS\Binn\;C:\Program Files\Microsoft\Web Platform Install;G:\Rust\Rust\bin;G:\Program Files (x86)\Git\cmd;C:\Program Files\Java\jdk1.8.0_40\bin\;C:\Program Files (x86)\Skype\Phone\;G:\CKD\Program Files\OpenVPN\bin;C:\Program Files\nodejs\;C:\HashiCorp\Vagrant\bin;C:\Users\h\Anaconda2;C:\Users\h\Anaconda2\Scripts;C:\Users\h\Anaconda2\Library\bin;C:\OrCAD\OrCAD_16.6_Lite\tools\pcb\bin;C:\OrCAD\OrCAD_16.6_Lite\tools\fet\bin;C:\OrCAD\OrCAD_16.6_Lite\OpenAccess\bin\win32\opt;C:\OrCAD\OrCAD_16.6_Lite\tools\bin;C:\OrCAD\OrCAD_16.6_Lite\tools\Capture;C:\OrCAD\OrCAD_16.6_Lite\tools\PSpice;;C:\Modeltech_pe_edu_10.3\win32pe_edu\;G:\Python34;G:\Python34\python.exe;G:\Python34\Scripts\pip.exe;C:\Users\h\AppData\Roaming\npm;C:\Users\h\Documents\PROGRAMMING\YearOne\eclipse-java-kepler-R-win32-x86_64\eclipse;
+ProgramData=C:\ProgramData
+ProgramFiles(x86)=C:\Program Files (x86)
+ProgramFiles=C:\Program Files
+ProgramW6432=C:\Program Files
+SESSIONNAME=Console
+SYSTEMDRIVE=C:
+SYSTEMROOT=C:\WINDOWS
+SystemDrive=C:
+SystemRoot=C:\WINDOWS
+TEMP=C:\Users\h\AppData\Local\Temp
+TMP=C:\Users\h\AppData\Local\Temp
+USERDOMAIN=P
+USERDOMAIN_ROAMINGPROFILE=P
+USERNAME=charlotto
+USERPROFILE=C:\Users\h
+VBOX_MSI_INSTALL_PATH=G:\Program Files\Oracle\VirtualBox\
+VS100COMNTOOLS=C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\Tools\
+WINDIR=C:\WINDOWS
+asl.log=Destination=file
+windir=C:\WINDOWS
+
+ - Working Dir:
+C:\Users\h\Documents\PROGRAMMING\YearOne\eclipse-java-kepler-R-win32-x86_64\eclipse\plugins\org.python.pydev_4.4.0.201510052309\pysrc
+
+ - OS:
+Windows 8
+
+ - Std output:
+
+
+ - Err output:
+
+!STACK 0
+java.nio.channels.ClosedByInterruptException
+	at java.nio.channels.spi.AbstractInterruptibleChannel.end(Unknown Source)
+	at sun.nio.ch.SocketChannelImpl.write(Unknown Source)
+	at java.nio.channels.Channels.writeFullyImpl(Unknown Source)
+	at java.nio.channels.Channels.writeFully(Unknown Source)
+	at java.nio.channels.Channels.access$000(Unknown Source)
+	at java.nio.channels.Channels$1.write(Unknown Source)
+	at java.io.OutputStream.write(Unknown Source)
+	at org.python.pydev.editor.codecompletion.shell.AbstractShell.write(AbstractShell.java:544)
+	at org.python.pydev.editor.codecompletion.shell.AbstractShell.writeAndGetResults(AbstractShell.java:691)
+	at org.python.pydev.editor.codecompletion.shell.AbstractShell.getLineCol(AbstractShell.java:776)
+	at org.python.pydev.editor.codecompletion.revisited.modules.CompiledModule.findDefinition(CompiledModule.java:596)
+	at org.python.pydev.editor.codecompletion.revisited.modules.CompiledModule.findDefinition(CompiledModule.java:1)
+	at org.python.pydev.editor.codecompletion.revisited.modules.SourceModule.findGlobalTokDef(SourceModule.java:1097)
+	at org.python.pydev.editor.codecompletion.revisited.modules.SourceModule.findDefinitionsFromModAndTok(SourceModule.java:970)
+	at org.python.pydev.editor.codecompletion.revisited.modules.SourceModule.findDefinition(SourceModule.java:952)
+	at org.python.pydev.editor.codecompletion.revisited.modules.SourceModule.findDefinition(SourceModule.java:665)
+	at org.python.pydev.editor.codecompletion.revisited.modules.SourceModule.findDefinition(SourceModule.java:1)
+	at org.python.pydev.editor.refactoring.PyRefactoringFindDefinition.findActualDefinition(PyRefactoringFindDefinition.java:182)
+	at org.python.pydev.editor.refactoring.PyRefactoringFindDefinition.findActualDefinition(PyRefactoringFindDefinition.java:81)
+	at org.python.pydev.editor.hover.PyTextHover.getDocstringHover(PyTextHover.java:200)
+	at org.python.pydev.editor.hover.PyTextHover.getHoverInfo(PyTextHover.java:144)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:168)
+
+!ENTRY org.python.pydev.shared_core 4 4 2015-11-13 05:51:14.640
+!MESSAGE Unhandled: ExtSlice[dims=[Slice[lower=null, upper=null, step=null], Index[value=UnaryOp[op=USub, operand=Num[n=1, type=Int, num=1]]]]]
+!STACK 0
+java.lang.RuntimeException: Unhandled: ExtSlice[dims=[Slice[lower=null, upper=null, step=null], Index[value=UnaryOp[op=USub, operand=Num[n=1, type=Int, num=1]]]]]
+	at org.python.pydev.parser.prettyprinterv2.MakeAstValidForPrettyPrintingVisitor.unhandled_node(MakeAstValidForPrettyPrintingVisitor.java:105)
+	at org.python.pydev.parser.jython.ast.VisitorBase.visitExtSlice(VisitorBase.java:345)
+	at org.python.pydev.parser.jython.ast.ExtSlice.accept(ExtSlice.java:79)
+	at org.python.pydev.parser.prettyprinterv2.MakeAstValidForPrettyPrintingVisitor.visitSubscript(MakeAstValidForPrettyPrintingVisitor.java:933)
+	at org.python.pydev.parser.jython.ast.Subscript.accept(Subscript.java:93)
+	at org.python.pydev.parser.prettyprinterv2.MakeAstValidForPrettyPrintingVisitor.visitAssign(MakeAstValidForPrettyPrintingVisitor.java:184)
+	at org.python.pydev.parser.jython.ast.Assign.accept(Assign.java:90)
+	at org.python.pydev.parser.prettyprinterv2.MakeAstValidForPrettyPrintingVisitor.visitFunctionDef(MakeAstValidForPrettyPrintingVisitor.java:862)
+	at org.python.pydev.parser.jython.ast.FunctionDef.accept(FunctionDef.java:131)
+	at org.python.pydev.parser.prettyprinterv2.MakeAstValidForPrettyPrintingVisitor.makeValid(MakeAstValidForPrettyPrintingVisitor.java:171)
+	at org.python.pydev.editor.hover.PyTextHover.getDocstringHover(PyTextHover.java:232)
+	at org.python.pydev.editor.hover.PyTextHover.getHoverInfo(PyTextHover.java:144)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:168)
+
+!ENTRY org.python.pydev.shared_core 1 1 2015-11-13 06:01:40.360
+!MESSAGE Not saving ast manager for: P/machine. No write area available.
+!SESSION 2015-11-13 08:39:52.153 -----------------------------------------------
+eclipse.buildId=4.4.2.M20150204-1700
+java.version=1.8.0_40
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_GB
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.python.pydev.shared_core 4 4 2015-11-13 08:40:42.193
+!MESSAGE Error. returning: 0
+!STACK 0
+java.nio.file.NoSuchFileException: G:\machinelearning\ex2\python\plot_digits_classification.py
+	at sun.nio.fs.WindowsException.translateToIOException(Unknown Source)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(Unknown Source)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(Unknown Source)
+	at sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(Unknown Source)
+	at sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(Unknown Source)
+	at sun.nio.fs.WindowsFileSystemProvider.readAttributes(Unknown Source)
+	at java.nio.file.Files.readAttributes(Unknown Source)
+	at java.nio.file.Files.getLastModifiedTime(Unknown Source)
+	at org.python.pydev.shared_core.io.FileUtils.lastModified(FileUtils.java:1055)
+	at org.python.pydev.shared_core.io.FileUtils.lastModified(FileUtils.java:1046)
+	at com.python.pydev.analysis.additionalinfo.AbstractAdditionalDependencyInfo.addInfoToModuleOnRestoreInsertCommand(AbstractAdditionalDependencyInfo.java:577)
+	at com.python.pydev.analysis.additionalinfo.AbstractAdditionalInfoWithBuild.processInsert(AbstractAdditionalInfoWithBuild.java:187)
+	at org.python.pydev.core.DeltaSaver$DeltaInsertCommand.processWith(DeltaSaver.java:97)
+	at org.python.pydev.core.DeltaSaver.processDeltas(DeltaSaver.java:316)
+	at com.python.pydev.analysis.additionalinfo.AbstractAdditionalInfoWithBuild.restoreSavedInfo(AbstractAdditionalInfoWithBuild.java:102)
+	at com.python.pydev.analysis.additionalinfo.AbstractAdditionalDependencyInfo.loadContentsFromFile(AbstractAdditionalDependencyInfo.java:547)
+	at com.python.pydev.analysis.additionalinfo.AbstractAdditionalDependencyInfo.load(AbstractAdditionalDependencyInfo.java:462)
+	at com.python.pydev.analysis.additionalinfo.AdditionalProjectInterpreterInfo.getAdditionalInfoForProject(AdditionalProjectInterpreterInfo.java:233)
+	at com.python.pydev.analysis.additionalinfo.AdditionalProjectInterpreterInfo.recreateAllInfo(AdditionalProjectInterpreterInfo.java:314)
+	at com.python.pydev.analysis.additionalinfo.builders.InterpreterObserver.notifyProjectPythonpathRestored(InterpreterObserver.java:39)
+	at org.python.pydev.plugin.nature.PythonNature$RebuildPythonNatureModules.run(PythonNature.java:174)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-11-13 08:40:50.752
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.osgi 2 0 2015-11-13 08:41:01.816
+!MESSAGE While loading class "org.eclipse.jdt.internal.ui.BuildpathIndicatorLabelDecorator", thread "Thread[Worker-0,5,main]" timed out waiting (6023ms) for thread "Thread[org.eclipse.jface.text.reconciler.MonoReconciler,1,main]" to finish starting bundle "org.eclipse.jdt.ui_3.10.2.v20141014-1419 [905]". To avoid deadlock, thread "Thread[Worker-0,5,main]" is proceeding but "org.eclipse.jdt.internal.ui.BuildpathIndicatorLabelDecorator" may not be fully initialized.
+!STACK 0
+org.osgi.framework.BundleException: Unable to acquire the state change lock for the module: osgi.identity; osgi.identity="org.eclipse.jdt.ui"; type="osgi.bundle"; version:Version="3.10.2.v20141014-1419"; singleton:="true" [id=905] STARTED [STARTED]
+	at org.eclipse.osgi.container.Module.lockStateChange(Module.java:329)
+	at org.eclipse.osgi.container.Module.start(Module.java:389)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:454)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:531)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:324)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:320)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:395)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:345)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:337)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:160)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:568)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:174)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:905)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:243)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:55)
+	at org.eclipse.ui.internal.WorkbenchPlugin.createExtension(WorkbenchPlugin.java:285)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition$1.run(LightweightDecoratorDefinition.java:125)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.runtime.Platform.run(Platform.java:867)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.internalGetDecorator(LightweightDecoratorDefinition.java:120)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:255)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:83)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:367)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:349)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:372)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:332)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.osgi 2 0 2015-11-13 08:41:07.972
+!MESSAGE While loading class "org.eclipse.jdt.internal.ui.AbstractJavaElementLabelDecorator$DecoratorElementChangeListener", thread "Thread[Worker-0,5,main]" timed out waiting (6083ms) for thread "Thread[org.eclipse.jface.text.reconciler.MonoReconciler,1,main]" to finish starting bundle "org.eclipse.jdt.ui_3.10.2.v20141014-1419 [905]". To avoid deadlock, thread "Thread[Worker-0,5,main]" is proceeding but "org.eclipse.jdt.internal.ui.AbstractJavaElementLabelDecorator$DecoratorElementChangeListener" may not be fully initialized.
+!STACK 0
+org.osgi.framework.BundleException: Unable to acquire the state change lock for the module: osgi.identity; osgi.identity="org.eclipse.jdt.ui"; type="osgi.bundle"; version:Version="3.10.2.v20141014-1419"; singleton:="true" [id=905] STARTED [STARTED]
+	at org.eclipse.osgi.container.Module.lockStateChange(Module.java:329)
+	at org.eclipse.osgi.container.Module.start(Module.java:389)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:454)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:531)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:324)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:320)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:395)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:345)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:337)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:160)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.jdt.internal.ui.AbstractJavaElementLabelDecorator.addListener(AbstractJavaElementLabelDecorator.java:55)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition$1.run(LightweightDecoratorDefinition.java:127)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.runtime.Platform.run(Platform.java:867)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.internalGetDecorator(LightweightDecoratorDefinition.java:120)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:255)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:83)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:367)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:349)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:372)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:332)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.python.pydev.shared_core 4 4 2015-11-13 08:41:10.628
+!MESSAGE No output was in the standard output when
+trying to create the interpreter info for: C:\Users\h\Anaconda2\python.exe
+The error output contains:>>Traceback (most recent call last):
+  File "C:\Users\h\Documents\PROGRAMMING\YearOne\eclipse-java-kepler-R-win32-x86_64\eclipse\plugins\org.python.pydev_4.4.0.201510052309\pysrc\interpreterInfo.py", line 264, in <module>
+    raise RuntimeError('Ok, this is so that it shows the output (ugly hack for some platforms, so that it releases the output).')
+RuntimeError: Ok, this is so that it shows the output (ugly hack for some platforms, so that it releases the output).
+<<
+!STACK 0
+java.lang.RuntimeException: No output was in the standard output when
+trying to create the interpreter info for: C:\Users\h\Anaconda2\python.exe
+The error output contains:>>Traceback (most recent call last):
+  File "C:\Users\h\Documents\PROGRAMMING\YearOne\eclipse-java-kepler-R-win32-x86_64\eclipse\plugins\org.python.pydev_4.4.0.201510052309\pysrc\interpreterInfo.py", line 264, in <module>
+    raise RuntimeError('Ok, this is so that it shows the output (ugly hack for some platforms, so that it releases the output).')
+RuntimeError: Ok, this is so that it shows the output (ugly hack for some platforms, so that it releases the output).
+<<
+	at org.python.pydev.ui.interpreters.AbstractInterpreterManager.createInfoFromOutput(AbstractInterpreterManager.java:430)
+	at org.python.pydev.ui.interpreters.PythonInterpreterManager.doCreateInterpreterInfo(PythonInterpreterManager.java:71)
+	at org.python.pydev.ui.interpreters.PythonInterpreterManager.internalCreateInterpreterInfo(PythonInterpreterManager.java:44)
+	at org.python.pydev.ui.interpreters.AbstractInterpreterManager.createInterpreterInfo(AbstractInterpreterManager.java:381)
+	at org.python.pydev.editor.codecompletion.revisited.SynchSystemModulesManager$CreateInterpreterInfoCallback.createInterpreterInfo(SynchSystemModulesManager.java:173)
+	at org.python.pydev.editor.codecompletion.revisited.SynchSystemModulesManager.updateStructures(SynchSystemModulesManager.java:252)
+	at org.python.pydev.editor.codecompletion.revisited.SyncSystemModulesManagerScheduler$SynchJob.run(SyncSystemModulesManagerScheduler.java:238)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
