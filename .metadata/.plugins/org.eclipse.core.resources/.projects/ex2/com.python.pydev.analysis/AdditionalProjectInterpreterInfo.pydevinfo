@@ -1,33 +1,13 @@
 -- VERSION_4
 -- START DISKCACHE_2
 G:\machinelearning\.metadata\.plugins\org.eclipse.core.resources\.projects\ex2\com.python.pydev.analysis\v2_indexcache
-python.python|1447372948000000000|G:\machinelearning\ex2\python\python.py
-python.iris|1447394476000000000|G:\machinelearning\ex2\python\iris.py
-python.new|1447372634000000000|G:\machinelearning\ex2\python\new.py
-python.__init__|1447342446220000000|G:\machinelearning\ex2\python\__init__.py
 -- END DISKCACHE
 -- START DICTIONARY
-2
-1=python.python
-2=python.iris
+0
 -- END DICTIONARY
 -- START TREE 1
-15
-_no|1|_not_in_sphinx!10@
-ato|1|atomic_benchmark_estimator!10@
-ben|3|benchmark_throughputs!10@benchmark_estimator!10@benchmark!10@
-box|1|boxplot_runtimes!10@
-bul|1|bulk_benchmark_estimator!10@
-con|1|configuration!11@
-dig|1|digits!19@
-gen|1|generate_dataset!10@
-iri|1|iris!19@
-n_f|1|n_feature_influence!10@
-per|2|percentile!11@percentiles!11@
-plo|2|plot_n_features_influence!10@plot_benchmark_throughput!10@
-sta|1|start_time!11@
-sto|1|stop_time!11@
-thr|1|throughputs!11@
+1
+clf|0|
 -- END TREE
 -- START TREE 2
 0

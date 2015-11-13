@@ -1,6 +1,5 @@
-INSTUPpython.iris
-G:\machinelearning\ex2\python\iris.py
-INFOS:&&3|1|2|0&&3|3|2|0
-iris=1
-python.iris=2
-digits=3
+INSTUPpython.learnAndPredict
+G:\machinelearning\ex2\python\learnAndPredict.py
+INFOS:&&3|1|2|0
+python.learnAndPredict=2
+clf=1
