@@ -136,7 +136,7 @@ from sklearn.neighbors import KNeighborsClassifier
 # 2. Instantiate the Estimator (model) so called due 
 # to their primary goal being to estimate unknown quantities.
 # Creating an instance of the KNeighborsClassifier class!
-knn = KNeighborsClassifier(n_neighbors=1);
+knn = KNeighborsClassifier(n_neighbors=5);
 
 # We now have an object called knn that knows how to do
 # K nearest neighbours classification!
@@ -148,18 +148,46 @@ print(knn);
 # Occurs in-place so dont need to assign it to an object
 knn.fit(X, y);
 
-#4. predict the response of the new observation
+# 4. predict the response of the new observation
 # New observations called "out of sample" data
 # Uses the information it learned during the model training process.
 
-#Inputting measurements for unknown iris, and asking fitted model
+# Inputting measurements for unknown iris, and asking fitted model
 # to predict the iris species based on what it has learned in the previous step.
 
-array = knn.predict([3,5,4,2]) #WARNING HOW TO FIX?
+array = knn.predict([3, 5, 4, 2])  # WARNING HOW TO FIX?
 print array
-#Can use predict on multiple observations at once
-X_new = [[3,5,4,2],[5,4,3,2]]
-print knn.predict(X_new)
+# Can use predict on multiple observations at once
+# 2 by 4 : 2 observations with 4 features each
+X_new = [[3, 5, 4, 2], [5, 4, 3, 2]]
+print knn.predict(X_new);
+
+# Using a different value for K
+################################
+# So if you changed from k=1 to 5 this is known as model tuning
+# you are varying the arguments that you pass to the model!! 
+
+# Using a different classification model
+########################################
+# Because the models all have the same interface,
+# we can use the same 4 step pattern on them all.
+
+# Lets give logistic regression a go!
+
+#import the class 
+from sklearn.linear_model import LogisticRegression
+
+print("\nlogreg!\n");
+#instantiate the model (using default parameters)
+logreg = LogisticRegression();  
+
+#Fit the model with data
+logreg.fit(X, y)
+
+#Predict response for new observations
+print logreg.predict(X_new)
+
+
 
 
 
