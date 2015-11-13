@@ -2,6 +2,7 @@
 # convention is to import classes, modules or functions
 # as opposed to importing scikit learn as a whole
 from sklearn.datasets import load_iris
+from nltk.app.wordnet_app import SIMILAR
 # save return value in an object called iris
 # this object is a container called a "bunch" 
 # which is scikit learns data type for storing 
@@ -96,4 +97,15 @@ print(iris.target.shape);
 X = iris.data
 # Store response vector in "y" : lower case because it represents a vector
 y = iris.target
+
+######################################## TRAINING THE LEARNING MODEL YOOOOOO ###############################################
+"""
+How would we, as humans look at the data and tell the difference between 
+the species?
+
+Well, if you look at the data, each speciec of flower seem to have similar 
+measurements.
+
+When looking for unkown iris we will look at iris with similar measurments
+and assume they are the same species of unknown iris.
 
