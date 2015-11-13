@@ -106,7 +106,25 @@ the species?
 Well, if you look at the data, each speciec of flower seem to have similar 
 measurements.
 
-When looking for unkown iris we will look at iris with similar measurments
+When looking for unknown iris we will look at iris with similar measurements
 and assume they are the same species of unknown iris.
+
+######################################### K Nearest Neighbour Classification (KNN) #########################################
+
+Steps in K nearest neighbour:
+1. Pick a value K
+2. Search for K observations in training data that are "nearest" to measurements of unknown iris.
+
+     More on how to pick the k later...
+   
+     So say we pick 5 as our K:
+     The model calculates the numerical distance between the unknown iris and each of the 150 known iris's
+     and selects the 5 known iris's with the smallest distance to the unknown iris.
+     
+3. Use most popular response value from the K nearest neighbours as predicted response value for 
+   the unknown iris.
+   Popular response value --> predicted response value for unknown iris.
+   
+   What does it mean by most popular?  
 
 """
