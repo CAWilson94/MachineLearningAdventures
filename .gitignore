@@ -1,2 +1,4 @@
 *.metadata/
 pp-complete.csv
+training.csv
+testing.csv
