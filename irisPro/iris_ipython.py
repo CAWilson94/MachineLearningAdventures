@@ -2,7 +2,6 @@
 # convention is to import classes, modules or functions
 # as opposed to importing scikit learn as a whole
 from sklearn.datasets import load_iris
-from nltk.app.wordnet_app import SIMILAR
 # save return value in an object called iris
 # this object is a container called a "bunch" 
 # which is scikit learns data type for storing 

@@ -5,3 +5,5 @@ readCSV = csv.reader(file,delimiter= ",")
 for row in readCSV:
     print(row)
 file.close()
+
+
