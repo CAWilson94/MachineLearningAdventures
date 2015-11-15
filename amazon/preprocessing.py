@@ -13,6 +13,7 @@ with open("pp-complete.csv", "rb") as f:
             print "2015 spotted"
             testing.writerow(row)
         else:
+            print "writing to training"
             training.writerow(row)
     
 
