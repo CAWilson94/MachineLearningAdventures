@@ -1,25 +1,17 @@
 import csv
-import pandas
-from docutils.utils import column_indices
-from bsddb.dbtables import contains_metastrings
-file = open("Advertising.csv")
+# write new file
+training = csv.writer(open("training.csv", "wb"))
+test = csv.writer(open("test.csv", "wb"))
+# read in original file
+with open("Advertising.csv", "rb") as f:
+    csvreader = csv.reader(f, delimiter=",")
+    for row in csvreader :
+    # if contains(2016)
+        if "37" in row[2]:
+            print "2015 spotted"
+            training.writerow(row)
+    
 
-#write new file
-c = csv.writer(open("boop.csv", "wb"))
-#read in original file
-readCSV = csv.reader(file,delimiter= ",")
-
-print file.index_col(2)
-
-
-"""for row in readCSV :
-    print "something"
-    #if contains(2016)
-    if readCSV.index_col(2).Contains('2015') :
-        print "2015 spotted"
-        c.writerow(row)
-        
-file.close()"""
     
     
     
