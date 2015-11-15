@@ -1,14 +1,18 @@
 import csv
-# write new file
+
+# Write training and testing files
 training = csv.writer(open("training.csv", "wb"))
-test = csv.writer(open("test.csv", "wb"))
-# read in original file
-with open("Advertising.csv", "rb") as f:
+testing = csv.writer(open("testing.csv", "wb"))
+
+# Read in original file
+with open("pp-complete.csv", "rb") as f:
     csvreader = csv.reader(f, delimiter=",")
+    # Split up data
     for row in csvreader :
-    # if contains(2016)
-        if "37" in row[2]:
+        if "2015" in row[2]:
             print "2015 spotted"
+            testing.writerow(row)
+        else:
             training.writerow(row)
     
 
