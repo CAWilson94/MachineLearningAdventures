@@ -56,5 +56,11 @@ print target
 """
 The above is training the data, so now we want to test
 the data, see if our predictions match up and evaluate 
-the model we have created. 
+the model we have created.
+
+i.e. MODEL VALIDATION 
+
+    metrics.accuracy_score(y_test,y_predict)
+    plot_confusion_matrix(y_test, y_pred)
+
 """
