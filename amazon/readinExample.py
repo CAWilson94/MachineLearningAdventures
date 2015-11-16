@@ -12,7 +12,7 @@ SVC().fit(data, target)
 """
 # Import the data
 import pandas as pd
-data = pd.read_csv(open('pp-complete.csv'))
+data = pd.read_csv(open('Advertising.csv'))
 
 # Bunch the data!!
 type(data)
@@ -34,6 +34,7 @@ target, what we want to predict.
 
 """
 X = data[feature_cols]
+print X
 # Get the target/response vector from it
 y = data.Sales
 
