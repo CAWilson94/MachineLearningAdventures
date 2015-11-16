@@ -21,7 +21,8 @@ print data.shape
 feature_cols = ['TV','Radio','Newspaper']
 X= data[feature_cols]
 y=data.Sales
-
+print "printing y"
+print y
 # follow the usual sklearn pattern: import, instantiate, fit
 
 #import

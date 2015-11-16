@@ -12,6 +12,7 @@ iris = load_iris();
 # print the iris data
 # each collumn represents the four measurments
 type(iris);
+print "iris.data"
 print (iris.data);
 """
 Example start of dataset output 
