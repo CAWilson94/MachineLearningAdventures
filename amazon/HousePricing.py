@@ -3,6 +3,7 @@ Created on 16 Nov 2015
 @author: charlotto
 '''
 import pandas as pd
+from sklearn.feature_extraction import DictVectorizer as DV
 
 # Column headers to make things a bit easier later on
 cols = ['ID', 'Price', 'Date', '4', 'PropType', '6', 'LeaseDuration',
@@ -30,19 +31,21 @@ So we transpose the data frame then call the dict to values method
 
 # Lets try the pandas way
 # Just using this to create dict values for scikit learns vectorizer thingy
-panda = pData['Location']
+panda = feature_cols
 panda_dict = panda.T.to_dict().values()
-print "got here"
 
+print panda_dict
 # Now to convert the strings..
+#vectorizer = DV( sparse = False )
+#vec_X_train = vectorizer.fit_transform(panda_dict)
 
 
 # Features matrix(n_samples,n_features)
-# X = pData[cat_dict]
+# 
 # print X
 
 # Response/target vector
-y = pData['Price']
+#y = pData['Price']
 
 """
 # Modelling process now!
