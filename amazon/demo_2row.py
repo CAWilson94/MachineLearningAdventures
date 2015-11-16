@@ -5,6 +5,8 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 from patsy.desc import INTERCEPT
+from sklearn.preprocessing.label import LabelEncoder
+from sklearn import preprocessing
 
 print "read in csv"
 # Read data into a data frame
@@ -18,7 +20,17 @@ print data.shape
 # where n starts from 0, so  we have 3 rows which should show as 2
 
 #create X and y:
-feature_cols = ['TV','Radio','Newspaper']
+feature_cols = ['TV','Radio','Newspaper','LondonorNah']
+
+
+le = preprocessing.LabelEncoder()
+le.fit('LondonorNah')
+
+
+print le.transform('LondonorNah')
+
+
+
 X= data[feature_cols]
 y= data.Sales
 print "printing y"
