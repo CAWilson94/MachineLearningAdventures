@@ -20,18 +20,11 @@ print data.shape
 # where n starts from 0, so  we have 3 rows which should show as 2
 
 #create X and y:
-feature_cols = ['TV','Radio','Newspaper','LondonorNah']
-
-
-le = preprocessing.LabelEncoder()
-le.fit('LondonorNah')
-
-
-print le.transform('LondonorNah')
-
+feature_cols = ['TV','Radio','Newspaper']
 
 
 X= data[feature_cols]
+print X.shape
 y= data.Sales
 print "printing y"
 print y

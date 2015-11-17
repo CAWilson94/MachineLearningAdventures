@@ -1,5 +1,4 @@
 import csv
-from sklearn import linear_model
 
 # Write training and testing files
 training = csv.writer(open("training.csv", "wb"))
@@ -16,6 +15,9 @@ with open("pp-complete.csv", "rb") as f:
         else:
             print "writing to training"
             training.writerow(row)
+            
+            
+
             
     
 
