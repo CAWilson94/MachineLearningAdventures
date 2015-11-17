@@ -25,23 +25,28 @@ type(test)
 
 feature_cols = ['LeaseDuration']
 
-X_test = test[feature_cols]
+#X_test = test[feature_cols]
 # X_train = train[features_cols]
 
 # label encoder, fit and transform
-# X = le.fit_transform(pData[feature_cols])  
-# X = pData['LeaseDuration'].apply(lambda lD: 0 if lD == "F" else 1) 
+
+
+
+test['LeaseDuration'] = le.fit_transform(test['LeaseDuration'])  
+#X = test['LeaseDuration'].apply(lambda lD: 0 if lD == "F" else 1) 
+X_test = test[['LeaseDuration']]
 print X_test.shape
+print X_test
 # Response/target vector
 y_test = test['Price']
 # y_train = train['Price']
-# print y
+print y_test.shape
 
 # Modelling process now!
 from sklearn.linear_model import LinearRegression
 lm = LinearRegression()
-# lm.fit(X, y)
-# print "got here"
+lm.fit(X_test, y_test)
+print "got here"
 # predict = lm.predict(X)
 
 # metrics.accuracy_score(y_test,y_predict)
