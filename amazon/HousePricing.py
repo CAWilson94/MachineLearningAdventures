@@ -1,58 +1,61 @@
-'''
-Created on 16 Nov 2015
-@author: charlotto
-'''
-import pandas as pd
-from sklearn.preprocessing import LabelEncoder
-le = LabelEncoder()
+"""
+November 2015
+@author Charlotte Alexandra Wilson 
 
+"""
+import pandas as pd
+import numpy as np
+from sklearn.preprocessing import LabelEncoder
+from sklearn.linear_model import LinearRegression
 
 # Column headers to make things a bit easier later on
 cols = ['ID', 'Price', 'Date', '4', 'PropType', '6', 'LeaseDuration',
         '8', '9', '10', '11', 'Location', '13', '14', '15', '16']
 
-# Read in training data
+# Read in training & testing data
+# data = pd.read_csv(open('training.csv'), header=None, names=cols)
 data = pd.read_csv(open('testing.csv'), header=None, names=cols)
-# Read in testing data 
-# data = pd.read_csv(open('testing.csv'), header=None, names=cols)
 
 # Convert into pandas data frame
-test = pd.DataFrame(data)
 # train = pd.DataFrame(data)
-# Get data into object "Bunch"
-type(test)
-# type(test)
+test = pd.DataFrame(data)
 
+# Get data into object "Bunch" ----> Check if this is really needed!
+# type(train)
+type(test)
+
+# Preparing the features matrix 
 feature_cols = ['LeaseDuration']
 
-#X_test = test[feature_cols]
-# X_train = train[features_cols]
+# Need categorical features in numerical form
+le = LabelEncoder()
+test['LeaseDuration'] = le.fit_transform(test['LeaseDuration']) 
 
-# label encoder, fit and transform
-
-
-
-test['LeaseDuration'] = le.fit_transform(test['LeaseDuration'])  
-#X = test['LeaseDuration'].apply(lambda lD: 0 if lD == "F" else 1) 
+# Features matrix 
 X_test = test[['LeaseDuration']]
-print X_test.shape
-print X_test
+
 # Response/target vector
 y_test = test['Price']
-# y_train = train['Price']
-print y_test.shape
 
-# Modelling process now!
-from sklearn.linear_model import LinearRegression
+
+# Modelling process
+
+# Create linear regression object
 lm = LinearRegression()
-lm.fit(X_test, y_test)
-print "got here"
-# predict = lm.predict(X)
 
-# metrics.accuracy_score(y_test,y_predict)
-# plot_confusion_matrix(y_test, y_predict)
+# Train model using the training data set
+"""Use training data here """
+fit = lm.fit(X_test, y_test)  
 
+# The coefficients
+print('Coef_: ', lm.coef_)
+# The intercept
+print('Coef_: ', lm.intercept_)
 
+""" use testing data here"""
+# The mean square error
+print("Sum of squares: %.2f" % np.mean((lm.predict(X_test) - y_test) ** 2))
+# Variance score - perfect is 1
+print('Variance score: %.2f' % lm.score(X_test, y_test))
 
-
-
+#Should return variance score 0 until you use the right data.. sake
